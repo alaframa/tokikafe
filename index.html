@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOKI Coffee Shop - Time for a Break</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom scrollbar for a modern look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fdfaf6; /* Lighter track for warm feel */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b8860b; /* Darker yellow/brown thumb */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a0522d; /* Even darker brown on hover */
+        }
+    </style>
+</head>
+<body class="bg-[#fdfaf6] text-[#4a2c2a]"> <!-- Warm off-white background, dark brown text -->
+
+    <!-- Header Section -->
+    <header class="bg-[#fff8e1] shadow-lg p-4 md:p-6 text-center rounded-b-xl"> <!-- Light yellow/cream header -->
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-[#8b4513] tracking-tight">TOKI</h1> <!-- SaddleBrown for TOKI -->
+            <p class="text-xl md:text-2xl text-[#a0522d] mt-2">時間 - Time for a Break</p> <!-- Sienna for Japanese text -->
+        </div>
+    </header>
+
+    <!-- Hero/Banner Section -->
+    <section class="relative h-64 md:h-96 overflow-hidden bg-cover bg-center rounded-lg mx-4 md:mx-auto my-8"
+             style="background-image: url('https://placehold.co/1200x400/D2B48C/FFFFFF?text=TOKI+Coffee+Shop');"> <!-- Tan background with white text -->
+        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center p-4 rounded-lg">
+            <div class="text-center text-white">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 animate-fade-in-down">Savor the Moment. Embrace the Time.</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto animate-fade-in-up">
+                    Experience tranquility with every sip. Freshly brewed coffee and delightful pastries await.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Menu Section -->
+    <main class="container mx-auto my-8 p-4 md:p-8 bg-white rounded-xl shadow-lg"> <!-- White background for menu content -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-[#8b4513] mb-8">Our Menu</h2> <!-- SaddleBrown for menu title -->
+        <div id="menu-container" class="space-y-10">
+            <!-- Menu categories and items will be dynamically loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#4a2c2a] text-white p-6 text-center mt-8 rounded-t-xl"> <!-- Dark brown footer -->
+        <div class="container mx-auto">
+            <p>&copy; 2025 TOKI Coffee Shop. All rights reserved.</p>
+            <p class="mt-2 text-sm">Follow us on social media!</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for menu generation -->
+    <script src="script.js"></script>
+</body>
+</html>
